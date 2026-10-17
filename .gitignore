@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
-package-lock.json
+# package-lock.json is committed on purpose: ignoring it made every install
+# resolve express/ws to whatever was newest that day, so two machines running
+# the same commit could get different dependency trees.
 
 # Logs
 logs/
