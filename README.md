@@ -26,7 +26,7 @@ Server otomatis nyala, terminal akan langsung nampilin IP address untuk kru.
 
 ```bash
 # 1. Clone
-git clone https://github.com/zzdree/ip26-intercom.git
+git clone https://gitlab.com/zzdree/ip26-intercom.git
 cd ip26-intercom
 
 # 2. Install (cuma sekali)
