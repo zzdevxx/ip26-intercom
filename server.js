@@ -40,6 +40,11 @@ const TURN_CONFIG = {
     ]
 };
 
+// ============================================================================
+// 1. APP & STATIC ASSETS
+// ============================================================================
+const app = express();
+
 // CSP header middleware
 app.use((req, res, next) => {
     res.setHeader('Content-Security-Policy',
@@ -59,11 +64,6 @@ app.use((req, res, next) => {
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     next();
 });
-
-// ============================================================================
-// 1. APP & STATIC ASSETS
-// ============================================================================
-const app = express();
 
 app.use(express.static(path.join(__dirname, 'public'), {
     extensions: ['html'],
